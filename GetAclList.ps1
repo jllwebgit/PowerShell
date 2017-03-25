@@ -1,8 +1,11 @@
+Param(
+    [Parameter(mandatory=$true,HelpMessage="アクセス権一覧を取得するパス")]
+    [string]$targetDir,
+    [Parameter(mandatory=$true,HelpMessage="結果ファイルを出力するCSVパス")]
+    [string]$exportCSVPath
+)
+
 $array = New-Object System.Collections.ArrayList
-#アクセス権一覧を取得するパス
-$targetDir = "C:\"
-#結果を出力するCSVパス
-$exportCSVPath = "D:\acl.csv"
 
 #全てのサブディレクトリのみ
 #ファイルも出力したい場合には、「 Where { $_.PSIsContainer } |」を
