@@ -1,0 +1,2 @@
+# PowerShell
+アクセス権一覧を吐き出すためのPowerShell
